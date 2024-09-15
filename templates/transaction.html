@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Blockchain Transactions</h2>
+    <form id="transactionForm">
+        <input type="text" id="sender" placeholder="Sender" required>
+        <input type="text" id="receiver" placeholder="Receiver" required>
+        <input type="number" id="amount" placeholder="Amount" required>
+        <button type="submit">Submit Transaction</button>
+    </form>
+    <h3>Pending Transactions</h3>
+    <pre id="pendingTransactions"></pre>
+{% endblock %}

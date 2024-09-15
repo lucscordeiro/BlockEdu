@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-h1 {
+h1, h2 {
     text-align: center;
 }
 
@@ -11,7 +11,11 @@ form {
     margin-bottom: 20px;
 }
 
-#blockchain {
+input {
+    margin: 5px;
+}
+
+#blockchain, #pendingTransactions {
     white-space: pre-wrap;
     border: 1px solid #ccc;
     padding: 10px;
