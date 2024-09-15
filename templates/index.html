@@ -1,19 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blockchain Demo</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
-</head>
-<body>
-    <h1>Blockchain Demo</h1>
-    <form id="addBlockForm">
-        <input type="text" id="blockData" placeholder="Enter data for the block" required>
-        <button type="submit">Add Block</button>
-    </form>
-    <h2>Blockchain</h2>
-    <pre id="blockchain"></pre>
-    <script src="{{ url_for('static', filename='script.js') }}"></script>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Welcome to the Blockchain Demo</h2>
+    <p>This is the home page.</p>
+{% endblock %}

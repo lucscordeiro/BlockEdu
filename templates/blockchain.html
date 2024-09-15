@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Blockchain</h2>
+    <form id="addBlockForm">
+        <input type="text" id="blockData" placeholder="Enter data for the block" required>
+        <button type="submit">Add Block</button>
+    </form>
+    <pre id="blockchain"></pre>
+{% endblock %}

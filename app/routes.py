@@ -1,5 +1,5 @@
 from flask import jsonify, request, render_template
-from .Blockchain import Blockchain
+from .blockchain import Blockchain
 
 blockchain = Blockchain()
 
@@ -8,6 +8,10 @@ def init_routes(app):
     @app.route('/', methods=['GET'])
     def home():
         return render_template('index.html')
+
+    @app.route('/blockchain', methods=['GET'])
+    def blockchain_page():
+        return render_template('blockchain.html')
 
     @app.route('/add_block/<data>', methods=['GET'])
     def add_block(data):
